@@ -8,6 +8,7 @@
 
 $negro: #000000ce;  
 $blanco: #fff;
+$gris: #888;
 $ancho: 100%;
 
 // mixin // 
@@ -16,6 +17,11 @@ $ancho: 100%;
     height: $height;
     width: $width;
 }
+
+
+
+
+
 
 
 
@@ -48,6 +54,7 @@ $ancho: 100%;
 .inicio{
     @include medidas (auto, $ancho);
     display: grid;
+    margin-bottom: 30px;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr, 1fr, 1fr, 1fr;
     grid-template-areas: 
@@ -116,6 +123,25 @@ $ancho: 100%;
     text-align: center;
     color: $negro;
 }
+
+// mapa //
+
+$mapa: (
+    30px: beige,
+    40px: pink,
+    50px: black   
+
+    );
+
+    @each $medida, $color in $mapa {
+        .tu-#{$color} {
+            height: 100px;
+            background-color: $blanco;
+            text-align: center;
+            font-size: $medida;
+            color: $color;
+        }
+    }
 footer{
     @include medidas (300px, $ancho);
     margin-top: 30px;
@@ -134,17 +160,20 @@ footer{
     text-align: center;
     padding-top: 20px;
     color: $blanco;
+    font-size: 20px;
 }
 .mediosPago{
     grid-area: mediosPago;
     text-align: center;
     color: $blanco;
+    font-size: 15px;
 }
 .redes{
     grid-area: redes;
     text-align: center;
     padding-top: 20px;
     color:$blanco;
+    font-size: 20px;
 }
 .instagram{
     grid-area: instagram;
@@ -160,11 +189,13 @@ footer i{
     text-align: center;
     padding-top: 20px;
     color: $blanco;
+    font-size: 20px;
 }
 .email{
     grid-area: email;
     text-align: center;
     color:$blanco;
+    font-size: 15px;
 }
 .derechos{
     grid-area: derechos;

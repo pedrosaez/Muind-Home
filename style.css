@@ -37,6 +37,7 @@
   height: auto;
   width: 100%;
   display: grid;
+  margin-bottom: 30px;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr, 1fr, 1fr, 1fr;
   grid-template-areas: "item1 item3" "item2 item4" "item5 item7" "item6 item8";
@@ -111,6 +112,30 @@
   color: rgba(0, 0, 0, 0.8078431373);
 }
 
+.tu-beige {
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 30px;
+  color: beige;
+}
+
+.tu-pink {
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 40px;
+  color: pink;
+}
+
+.tu-black {
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
 footer {
   height: 300px;
   width: 100%;
@@ -127,12 +152,14 @@ footer {
   text-align: center;
   padding-top: 20px;
   color: #fff;
+  font-size: 20px;
 }
 
 .mediosPago {
   grid-area: mediosPago;
   text-align: center;
   color: #fff;
+  font-size: 15px;
 }
 
 .redes {
@@ -140,6 +167,7 @@ footer {
   text-align: center;
   padding-top: 20px;
   color: #fff;
+  font-size: 20px;
 }
 
 .instagram {
@@ -158,12 +186,14 @@ footer i {
   text-align: center;
   padding-top: 20px;
   color: #fff;
+  font-size: 20px;
 }
 
 .email {
   grid-area: email;
   text-align: center;
   color: #fff;
+  font-size: 15px;
 }
 
 .derechos {
