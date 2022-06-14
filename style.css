@@ -19,9 +19,9 @@
 }
 
 .divisor1 {
-  grid-area: divisor1;
-  width: 100%;
   height: 35px;
+  width: 100%;
+  grid-area: divisor1;
   text-align: center;
   padding-top: 7px;
   margin-top: 10px;
@@ -29,14 +29,13 @@
   background-color: rgba(0, 0, 0, 0.8078431373);
   color: #fff;
 }
-
-.divisor1 p {
+.divisor1 .divisor1 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .inicio {
-  width: 100%;
   height: auto;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr, 1fr, 1fr, 1fr;
@@ -113,8 +112,8 @@
 }
 
 footer {
-  width: 100%;
   height: 300px;
+  width: 100%;
   margin-top: 30px;
   background-color: rgba(0, 0, 0, 0.8078431373);
   display: grid;
@@ -175,8 +174,8 @@ footer i {
 }
 
 .formulario {
-  width: 100%;
   height: auto;
+  width: 100%;
   margin-top: 20px;
   margin-left: 530px;
   border-radius: 10px solid rgba(0, 0, 0, 0.8078431373);
@@ -192,8 +191,8 @@ footer i {
 }
 
 .productos {
-  width: 100%;
   height: auto;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr, 1fr;
@@ -296,8 +295,8 @@ footer i {
 }
 
 .sillones2 {
-  width: 100%;
   height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,70 +304,46 @@ footer i {
 }
 
 .productoSillon1 {
-  width: 85%;
   height: 300px;
+  width: 85%;
   background-image: url(./pages/img/sillon3.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.sillon1Precio {
-  width: 120px;
+.sillon1Precio, .sillon4Precio, .sillon3Precio, .sillon2Precio {
   height: 40px;
+  width: 120px;
   margin-top: 10px;
   text-align: center;
   border: rgba(0, 0, 0, 0.8078431373) solid 1px;
 }
 
 .productosillon2 {
-  width: 85%;
   height: 300px;
+  width: 85%;
   margin-top: 15px;
   background-image: url(./pages/img/sillon2.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.sillon2Precio {
-  width: 120px;
-  height: 40px;
-  margin-top: 10px;
-  text-align: center;
-  border: rgba(0, 0, 0, 0.8078431373) solid 1px;
-}
-
 .productosillon3 {
-  width: 85%;
   height: 300px;
+  width: 85%;
   margin-top: 15px;
   background-image: url(./pages/img/sillon7.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.sillon3Precio {
-  width: 120px;
-  height: 40px;
-  margin-top: 10px;
-  text-align: center;
-  border: rgba(0, 0, 0, 0.8078431373) solid 1px;
-}
-
 .productosillon4 {
-  width: 85%;
   height: 300px;
+  width: 85%;
   margin-top: 15px;
   background-image: url(./pages/img/sillon6.jpg);
   background-position: center;
   background-size: cover;
-}
-
-.sillon4Precio {
-  width: 120px;
-  height: 40px;
-  margin-top: 10px;
-  text-align: center;
-  border: rgba(0, 0, 0, 0.8078431373) solid 1px;
 }
 
 @media only screen and (max-width: 480px) {

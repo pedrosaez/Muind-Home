@@ -3,8 +3,24 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
+// variables //
+
+$negro: #000000ce;  
+$blanco: #fff;
+$ancho: 100%;
+
+// mixin // 
+
+@mixin medidas ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+
+
 .fondo-nav{
-    background-color: #000000ce;
+    background-color: $negro;
 }
 .jumbotron{
     height: 350px;
@@ -13,25 +29,24 @@
     background-size: cover;
     background-position: center;
     color: floralwhite;
-    border-radius: 0%;
+    border-radius: 0%; 
 }
 .divisor1{
+    @include medidas (35px, $ancho);
     grid-area: divisor1;
-    width: 100%;
-    height: 35px;
     text-align: center;
     padding-top: 7px;
     margin-top: 10px;
     border-radius: 5px;
-    background-color: #000000ce;
-    color: #fff;
-}
-.divisor1 p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: $negro;
+    color: $blanco;
+
+    .divisor1 p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 }
 .inicio{
-    width: 100%;
-    height: auto;
+    @include medidas (auto, $ancho);
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr, 1fr, 1fr, 1fr;
@@ -57,7 +72,7 @@
     grid-area: item2;
     text-align: center;
     text-decoration: none;
-    color: #000000ce;
+    color: $negro;
 }
 .item3{
     grid-area: item3;
@@ -71,7 +86,7 @@
     grid-area: item4;
     text-align: center;
     text-decoration: none;
-    color: #000000ce;
+    color: $negro;
 }
 .item5{
     grid-area: item5;
@@ -85,7 +100,7 @@
     grid-area: item6;
     text-decoration: none;
     text-align: center;
-    color: #000000ce;
+    color: $negro;
 }
 .item7{
     grid-area: item7;
@@ -99,13 +114,12 @@
     grid-area: item8;
     text-decoration: none;
     text-align: center;
-    color: #000000ce;
+    color: $negro;
 }
 footer{
-    width: 100%;
-    height: 300px;
+    @include medidas (300px, $ancho);
     margin-top: 30px;
-    background-color: #000000ce;
+    background-color: $negro;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -119,18 +133,18 @@ footer{
     grid-area: pagos;
     text-align: center;
     padding-top: 20px;
-    color:#fff
+    color: $blanco;
 }
 .mediosPago{
     grid-area: mediosPago;
     text-align: center;
-    color: #fff;
+    color: $blanco;
 }
 .redes{
     grid-area: redes;
     text-align: center;
     padding-top: 20px;
-    color:#fff
+    color:$blanco;
 }
 .instagram{
     grid-area: instagram;
@@ -139,42 +153,40 @@ footer{
     letter-spacing: 15px;
 }
 footer i{
-    color: #fff;
+    color: $blanco;
 }
 .contacto{
     grid-area: contacto;
     text-align: center;
     padding-top: 20px;
-    color: #fff;
+    color: $blanco;
 }
 .email{
     grid-area: email;
     text-align: center;
-    color: #fff;
+    color:$blanco;
 }
 .derechos{
     grid-area: derechos;
     text-align: center;
     padding-top: 20px;
-    color:#fff
+    color:$blanco;
 }
 .formulario{
-    width: 100%;
-    height: auto;
+    @include medidas (auto, $ancho);
     margin-top: 20px;
     margin-left: 530px;
-    border-radius: 10px solid #000000ce;
+    border-radius: 10px solid $negro;
 }
 .nosotros2{
     padding: 10px;
 }
 .nosotros3{
     padding: 40px;
-    color: #000000ce;
+    color:$negro;
 }
 .productos{
-    width: 100%;
-    height: auto;
+    @include medidas (auto, $ancho);
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr, 1fr;
@@ -208,13 +220,13 @@ footer i{
     grid-area: tituloSillon;
     text-decoration: none;
     text-align: center;
-    color: #000000ce;
+    color: $negro;
 }
 .tituloMesa{
     grid-area: tituloMesa;
     text-decoration: none;
     text-align: center;
-    color: #000000ce;
+    color: $negro;
 }
 .perchero{
     grid-area: perchero;
@@ -236,19 +248,19 @@ footer i{
     grid-area: tituloPerchero;
     text-decoration: none;
     text-align: center;
-    color: #000000ce;
+    color: $negro;
 }
 .tituloDeco{
     grid-area: tituloDeco;
     text-decoration: none;
     text-align: center;
-    color: #000000ce;
+    color: $negro;
 }
 .numero{
     text-align: center;
     height: 20px;
-    background-color: #000000ce;
-    color: #fff;
+    background-color: $negro;
+    color: $blanco;
 }
 .sillones1{
     display: flex;
@@ -260,78 +272,60 @@ footer i{
 .sillones1 a{
     text-decoration: none;
     padding-left: 5px;
-    color: #000000ce;
+    color: $negro;
 }
 .sillones1 p{
     padding-left: 8px;
-    color: #000000ce;
+    color: $negro;
 }
 .sillones2{
-    width: 100%;
-    height: auto;
+    @include medidas (auto, $ancho);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
 }
 .productoSillon1{
-    width: 85%;
-    height: 300px;
+    @include medidas (300px, 85%);
     background-image: url(./pages/img/sillon3.jpg);
     background-position: center; 
     background-size: cover;
 }
 .sillon1Precio{
-    width: 120px;
-    height: 40px;
+    @include medidas (40px, 120px);
     margin-top: 10px;
     text-align: center;
-    border: #000000ce solid 1px;
+    border: $negro solid 1px;
 }
 .productosillon2{
-    width: 85%;
-    height: 300px;
+    @include medidas (300px, 85%);
     margin-top: 15px;
     background-image: url(./pages/img/sillon2.jpg);
     background-position: center;
     background-size: cover;
 }
 .sillon2Precio{
-    width: 120px;
-    height: 40px;
-    margin-top: 10px;
-    text-align: center;
-    border: #000000ce solid 1px;
+    @extend .sillon1Precio;
 }
 .productosillon3{
-    width: 85%;
-    height: 300px;
+    @include medidas (300px, 85%);
     margin-top: 15px;
     background-image: url(./pages/img/sillon7.jpg);
     background-position: center;
     background-size: cover;
 }
 .sillon3Precio{
-    width: 120px;
-    height: 40px;
-    margin-top: 10px;
-    text-align: center;
-    border: #000000ce solid 1px;
+    @extend .sillon1Precio;
 }
 .productosillon4{
-    width: 85%;
-    height: 300px;
+    @include medidas (300px, 85%);
     margin-top: 15px;
     background-image: url(./pages/img/sillon6.jpg);
     background-position: center;
     background-size: cover;
 }
 .sillon4Precio{
-    width: 120px;
-    height: 40px;
-    margin-top: 10px;
-    text-align: center;
-    border: #000000ce solid 1px;
+    @extend .sillon1Precio
 }
 
 @media only screen and (max-width:480px){
