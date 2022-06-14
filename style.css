@@ -1,0 +1,416 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.fondo-nav {
+  background-color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.jumbotron {
+  height: 350px;
+  margin-bottom: 0px;
+  background-image: url(./pages/img/rack.jpg);
+  background-size: cover;
+  background-position: center;
+  color: floralwhite;
+  border-radius: 0%;
+}
+
+.divisor1 {
+  grid-area: divisor1;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  padding-top: 7px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8078431373);
+  color: #fff;
+}
+
+.divisor1 p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inicio {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+  grid-template-areas: "item1 item3" "item2 item4" "item5 item7" "item6 item8";
+}
+
+.item:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.item1 {
+  grid-area: item1;
+  height: 300px;
+  margin: 15px;
+  background-image: url(./pages/img/sillon.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item2 {
+  grid-area: item2;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.item3 {
+  grid-area: item3;
+  height: 300px;
+  margin: 15px;
+  background-image: url(./pages/img/mesaJulia.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item4 {
+  grid-area: item4;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.item5 {
+  grid-area: item5;
+  height: 300px;
+  margin: 15px;
+  background-image: url(./pages/img/vanitory.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.item6 {
+  grid-area: item6;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.item7 {
+  grid-area: item7;
+  height: 300px;
+  margin: 15px;
+  background-image: url(./pages/img/silla1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item8 {
+  grid-area: item8;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.8078431373);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "pagos redes contacto " "mediosPago instagram email  " ". . . " ". derechos  .";
+}
+
+.pagos {
+  grid-area: pagos;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.mediosPago {
+  grid-area: mediosPago;
+  text-align: center;
+  color: #fff;
+}
+
+.redes {
+  grid-area: redes;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.instagram {
+  grid-area: instagram;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 15px;
+}
+
+footer i {
+  color: #fff;
+}
+
+.contacto {
+  grid-area: contacto;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.email {
+  grid-area: email;
+  text-align: center;
+  color: #fff;
+}
+
+.derechos {
+  grid-area: derechos;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.formulario {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 530px;
+  border-radius: 10px solid rgba(0, 0, 0, 0.8078431373);
+}
+
+.nosotros2 {
+  padding: 10px;
+}
+
+.nosotros3 {
+  padding: 40px;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.productos {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas: "sillon mesa" "tituloSillon tituloMesa" "perchero deco1" "tituloPerchero tituloDeco";
+}
+
+.producto:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.sillon {
+  grid-area: sillon;
+  height: 300px;
+  margin: 15px;
+  background-image: url(./pages/img/sillon2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.mesa {
+  grid-area: mesa;
+  height: 300px;
+  margin: 15px;
+  background-image: url(./pages/img/mesaJuliaBlanca.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.tituloSillon {
+  grid-area: tituloSillon;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.tituloMesa {
+  grid-area: tituloMesa;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.perchero {
+  grid-area: perchero;
+  height: 300px;
+  margin: 15px;
+  background-image: url(./pages/img/perchero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.deco1 {
+  grid-area: deco1;
+  height: 300px;
+  margin: 15px;
+  background-image: url(./pages/img/marco.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.tituloPerchero {
+  grid-area: tituloPerchero;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.tituloDeco {
+  grid-area: tituloDeco;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.numero {
+  text-align: center;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.8078431373);
+  color: #fff;
+}
+
+.sillones1 {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 3px;
+  padding-top: 5px;
+  position: relative;
+}
+
+.sillones1 a {
+  text-decoration: none;
+  padding-left: 5px;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.sillones1 p {
+  padding-left: 8px;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.sillones2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.productoSillon1 {
+  width: 85%;
+  height: 300px;
+  background-image: url(./pages/img/sillon3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sillon1Precio {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  border: rgba(0, 0, 0, 0.8078431373) solid 1px;
+}
+
+.productosillon2 {
+  width: 85%;
+  height: 300px;
+  margin-top: 15px;
+  background-image: url(./pages/img/sillon2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sillon2Precio {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  border: rgba(0, 0, 0, 0.8078431373) solid 1px;
+}
+
+.productosillon3 {
+  width: 85%;
+  height: 300px;
+  margin-top: 15px;
+  background-image: url(./pages/img/sillon7.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sillon3Precio {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  border: rgba(0, 0, 0, 0.8078431373) solid 1px;
+}
+
+.productosillon4 {
+  width: 85%;
+  height: 300px;
+  margin-top: 15px;
+  background-image: url(./pages/img/sillon6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sillon4Precio {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  border: rgba(0, 0, 0, 0.8078431373) solid 1px;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    height: 120px;
+    padding-left: 0%;
+  }
+  .inicio {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario {
+    margin-left: 50px;
+  }
+  .nosotros1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sillon {
+    height: 200px;
+    margin: 10px;
+  }
+  .mesa {
+    height: 200px;
+    margin: 10px;
+  }
+  .perchero {
+    height: 200px;
+    margin: 10px;
+  }
+  .deco1 {
+    height: 200px;
+    margin: 10px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
