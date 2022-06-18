@@ -140,6 +140,36 @@
   color: #fff;
 }
 
+.slider {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.slider1 {
+  margin-left: 10px;
+}
+
+.silder > img {
+  scroll-snap-align: start;
+}
+
+.slider img {
+  border-radius: 10px;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
 .tu-beige {
   height: 100px;
   background-color: #fff;

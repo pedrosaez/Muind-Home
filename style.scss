@@ -150,6 +150,32 @@ $ancho: 100%;
     }
 }
 
+.slider{
+    display: grid; 
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.slider1{
+    margin-left: 10px;
+}
+.silder > img{
+    scroll-snap-align: start;
+}
+.slider img{
+    border-radius: 10px;
+    height: 300px;
+    object-fit: contain;
+}
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+
+
 // mapa //
 
 $mapa: (
