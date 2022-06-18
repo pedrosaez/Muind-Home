@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Open+Sans:wght@300;800&family=Poppins:wght@100&family=Rubik:wght@300;500&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -28,9 +29,7 @@
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.8078431373);
   color: #fff;
-}
-.divisor1 .divisor1 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .inicio {
@@ -38,6 +37,8 @@
   width: 100%;
   display: grid;
   margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr, 1fr, 1fr, 1fr;
   grid-template-areas: "item1 item3" "item2 item4" "item5 item7" "item6 item8";
@@ -46,6 +47,8 @@
 .item:hover {
   transform: scale(1.1);
   transition: all 0.3s;
+  text-decoration: none;
+  color: burlywood;
 }
 
 .item1 {
@@ -137,14 +140,16 @@
 }
 
 footer {
-  height: 300px;
+  height: auto;
   width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
   margin-top: 30px;
   background-color: rgba(0, 0, 0, 0.8078431373);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "pagos redes contacto " "mediosPago instagram email  " ". . . " ". derechos  .";
+  grid-template-areas: "pagos redes contacto " "tarjetas instagram email  " ". . . " ". derechos  .";
 }
 
 .pagos {
@@ -155,11 +160,11 @@ footer {
   font-size: 20px;
 }
 
-.mediosPago {
-  grid-area: mediosPago;
+.tarjetas {
+  grid-area: tarjetas;
   text-align: center;
-  color: #fff;
-  font-size: 15px;
+  font-size: 25px;
+  letter-spacing: 15px;
 }
 
 .redes {
@@ -168,6 +173,18 @@ footer {
   padding-top: 20px;
   color: #fff;
   font-size: 20px;
+}
+
+.fa-instagram:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  color: burlywood;
+}
+
+.fa-whatsapp:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  color: burlywood;
 }
 
 .instagram {
@@ -181,7 +198,7 @@ footer i {
   color: #fff;
 }
 
-.contacto {
+.contactoFooter {
   grid-area: contacto;
   text-align: center;
   padding-top: 20px;
@@ -204,11 +221,48 @@ footer i {
 }
 
 .formulario {
-  height: auto;
+  background-color: #fff;
+  top: 50%;
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.5333333333);
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.contacto {
   width: 100%;
-  margin-top: 20px;
-  margin-left: 530px;
-  border-radius: 10px solid rgba(0, 0, 0, 0.8078431373);
+  color: rgba(0, 0, 0, 0.8078431373);
+  overflow: hidden;
+  padding: 10px;
+}
+.contacto .nombre {
+  padding-top: 30px;
+}
+
+.contacto label, .contacto input, .contacto textarea {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.contacto input:not([type=submit]), .contacto textarea {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8078431373);
+  margin-bottom: 20px;
+  font-size: 20px;
+  outline: none;
+}
+
+.enviar:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.enviar {
+  background-color: rgba(0, 0, 0, 0.8078431373);
+  color: #fff;
+  border: 1px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .nosotros2 {
@@ -216,6 +270,8 @@ footer i {
 }
 
 .nosotros3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
   padding: 40px;
   color: rgba(0, 0, 0, 0.8078431373);
 }
@@ -223,6 +279,8 @@ footer i {
 .productos {
   height: auto;
   width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
   display: grid;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr, 1fr;
@@ -232,6 +290,8 @@ footer i {
 .producto:hover {
   transform: scale(1.1);
   transition: all 0.3s;
+  text-decoration: none;
+  color: burlywood;
 }
 
 .sillon {
@@ -306,11 +366,22 @@ footer i {
 }
 
 .sillones1 {
+  font-family: "Rubik", Light, sans-serif;
   display: flex;
   flex-direction: row;
   grid-gap: 3px;
   padding-top: 5px;
   position: relative;
+}
+
+.inicio1:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.productos1:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
 
 .sillones1 a {
@@ -327,6 +398,9 @@ footer i {
 .sillones2 {
   height: auto;
   width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 13px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,41 +455,44 @@ footer i {
     display: flex;
     flex-direction: column;
   }
+
   .logo {
     height: 120px;
     padding-left: 0%;
   }
+
   .inicio {
     display: flex;
     flex-direction: column;
   }
-  .formulario {
-    margin-left: 50px;
-  }
+
   .nosotros1 {
     display: flex;
     flex-direction: column;
   }
+
   .sillon {
     height: 200px;
     margin: 10px;
   }
+
   .mesa {
     height: 200px;
     margin: 10px;
   }
+
   .perchero {
     height: 200px;
     margin: 10px;
   }
+
   .deco1 {
     height: 200px;
     margin: 10px;
   }
+
   footer {
     display: flex;
     flex-direction: column;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

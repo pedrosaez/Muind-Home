@@ -46,36 +46,43 @@
         <p class="divisor1">Contactenos</p> 
     </header>
 
-    <div class="formulario">
-        <form action="enviar.php" method="post" enctype="text/plain">
+    
+    <main class="formulario row  col-md-4 col-xs-12">
+        <form action="enviar.php" method="post" enctype="text/plain" class="contacto">
 
             <div class="nombre">
-            <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido..." required>
+                <label for="nombres">Nombre:</label>    
+                <input type="text" name="Nombre y apellido" required>
             </div>
 
             <div class="telefono">
-            <input type="tel" name="telefono" placeholder="Telefono..."><br><br>
+                <label for="telefono">Telefono:</label>       
+                <input type="tel" name="telefono"><br><br>
             </div>
 
             <div class="mensaje">
                 <dd class="texto">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Deje su mensaje..."></textarea><br>
-                <input type="submit" value="Enviar"><br><br>
+                <label for="mensaje">Mensaje</label>    
+                <textarea name="mensaje" id="mensaje" ></textarea><br>
+                <input class="enviar" type="submit" value="Enviar"><br><br>
                 </dd>
             </div>    
         </form>    
-    </div>    
-    </form>
+    </main>    
 
     <footer>
         <p class="pagos">Medios de pago</p>
-        <p class="mediosPago">Aceptamos todos los medios de pago.</p>
+        <div class="tarjetas">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+        </div>    
         <p class="redes">Nuestas redes sociales</p> 
         <div class="instagram">
             <a href="https://www.instagram.com/muind_home/"><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-        <p class="contacto">Contacto</p>
+        <p class="contactoFooter">Contacto</p>
         <p class="email">muind.mza@outlook.com</p>
         <p class="derechos">Todos los derechos reservados por copyright.</p>
     </footer>
