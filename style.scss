@@ -69,6 +69,7 @@ $ancho: 100%;
     transition: all 0.3s;
     text-decoration: none;
     color: burlywood;
+    border-radius: 10px;
 }
 .item1{
     grid-area: item1;
@@ -125,6 +126,29 @@ $ancho: 100%;
     text-decoration: none;
     text-align: center;
     color: $negro;
+}
+.wsp2:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+    color: $blanco;
+}
+.whatsapp{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(82, 244, 82);
+    color: $blanco;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    .wsp2{
+        text-decoration: none;
+        color: $blanco;
+    }
 }
 
 // mapa //
@@ -185,7 +209,7 @@ footer{
     transition: all 0.3s;
     color: burlywood;
 }    
-.fa-whatsapp:hover{
+.wsp:hover{
     transform: scale(1.1);
     transition: all 0.3s;
     color: burlywood;
@@ -285,6 +309,7 @@ footer i{
     transition: all 0.3s;
     text-decoration: none;
     color: burlywood;
+    border-radius: 10px;
 }    
 .sillon{
     grid-area: sillon;
@@ -458,6 +483,10 @@ footer i{
     .deco1{
         height: 200px;
         margin:10px
+    }
+    .whatsapp{
+        bottom: 30px;
+        right: 30px;
     }
     footer{
         display: flex;

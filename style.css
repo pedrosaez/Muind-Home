@@ -49,6 +49,7 @@
   transition: all 0.3s;
   text-decoration: none;
   color: burlywood;
+  border-radius: 10px;
 }
 
 .item1 {
@@ -113,6 +114,31 @@
   text-decoration: none;
   text-align: center;
   color: rgba(0, 0, 0, 0.8078431373);
+}
+
+.wsp2:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.whatsapp {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(82, 244, 82);
+  color: #fff;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 50px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.whatsapp .wsp2 {
+  text-decoration: none;
+  color: #fff;
 }
 
 .tu-beige {
@@ -181,7 +207,7 @@ footer {
   color: burlywood;
 }
 
-.fa-whatsapp:hover {
+.wsp:hover {
   transform: scale(1.1);
   transition: all 0.3s;
   color: burlywood;
@@ -293,6 +319,7 @@ footer i {
   transition: all 0.3s;
   text-decoration: none;
   color: burlywood;
+  border-radius: 10px;
 }
 
 .sillon {
@@ -490,6 +517,11 @@ footer i {
   .deco1 {
     height: 200px;
     margin: 10px;
+  }
+
+  .whatsapp {
+    bottom: 30px;
+    right: 30px;
   }
 
   footer {
