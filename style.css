@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Open+Sans:wght@300;800&family=Poppins:wght@100&family=Rubik:wght@300;500&family=Satisfy&family=Tajawal:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Encode+Sans+Semi+Condensed:wght@100&family=Open+Sans:wght@300;800&family=Poppins:wght@100&family=Readex+Pro:wght@200&family=Rubik:wght@300;500&family=Satisfy&family=Tajawal:wght@200&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -7,6 +7,7 @@
 
 .fondo-nav {
   background-color: rgba(0, 0, 0, 0.8078431373);
+  font-family: Readex Pro;
 }
 
 .jumbotron {
@@ -37,7 +38,8 @@
   width: 100%;
   display: grid;
   margin-bottom: 30px;
-  font-family: ExtraLight 200;
+  font-family: Readex Pro;
+  font-weight: 500;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr, 1fr, 1fr, 1fr;
   grid-template-areas: "item1 item3" "item2 item4" "item5 item7" "item6 item8";
@@ -197,8 +199,7 @@
 footer {
   height: auto;
   width: 100%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-family: Readex Pro;
   margin-top: 30px;
   background-color: rgba(0, 0, 0, 0.8078431373);
   display: grid;
@@ -206,13 +207,15 @@ footer {
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "pagos redes contacto " "tarjetas instagram email  " ". . . " ". derechos  .";
 }
+footer footer p {
+  font-size: 3px;
+}
 
 .pagos {
   grid-area: pagos;
   text-align: center;
   padding-top: 20px;
   color: #fff;
-  font-size: 20px;
 }
 
 .tarjetas {
@@ -227,7 +230,6 @@ footer {
   text-align: center;
   padding-top: 20px;
   color: #fff;
-  font-size: 20px;
 }
 
 .fa-instagram:hover {
@@ -258,14 +260,12 @@ footer i {
   text-align: center;
   padding-top: 20px;
   color: #fff;
-  font-size: 20px;
 }
 
 .email {
   grid-area: email;
   text-align: center;
   color: #fff;
-  font-size: 15px;
 }
 
 .derechos {
@@ -335,8 +335,8 @@ footer i {
 .productos {
   height: auto;
   width: 100%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-family: Readex Pro;
+  font-weight: 500;
   display: grid;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr, 1fr;
@@ -416,6 +416,7 @@ footer i {
 }
 
 .numero {
+  font-family: Readex Pro;
   text-align: center;
   height: 20px;
   background-color: rgba(0, 0, 0, 0.8078431373);
@@ -423,7 +424,7 @@ footer i {
 }
 
 .sillones1 {
-  font-family: "Rubik", Light, sans-serif;
+  font-family: Readex Pro;
   display: flex;
   flex-direction: row;
   grid-gap: 3px;
@@ -434,11 +435,13 @@ footer i {
 .inicio1:hover {
   transform: scale(1.1);
   transition: all 0.3s;
+  color: burlywood;
 }
 
 .productos1:hover {
   transform: scale(1.1);
   transition: all 0.3s;
+  color: burlywood;
 }
 
 .sillones1 a {
@@ -455,8 +458,8 @@ footer i {
 .sillones2 {
   height: auto;
   width: 100%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-family: Readex Pro;
+  font-weight: 500;
   font-size: 13px;
   display: flex;
   flex-direction: column;

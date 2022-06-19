@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Open+Sans:wght@300;800&family=Poppins:wght@100&family=Rubik:wght@300;500&family=Satisfy&family=Tajawal:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Encode+Sans+Semi+Condensed:wght@100&family=Open+Sans:wght@300;800&family=Poppins:wght@100&family=Readex+Pro:wght@200&family=Rubik:wght@300;500&family=Satisfy&family=Tajawal:wght@200&display=swap');
 
 // variables //
 
@@ -29,14 +29,15 @@ $ancho: 100%;
 
 .fondo-nav{
     background-color: $negro;
+    font-family: Readex Pro;
 }
 .jumbotron{
-    height: 350px;
+    height: 450px;
     margin-bottom: 0px;
     background-image: url(./pages/img/rack.jpg);
     background-size: cover;
     background-position: center;
-    color: floralwhite;
+    color: $blanco;
     border-radius: 0%; 
 }
 .divisor1{
@@ -48,13 +49,14 @@ $ancho: 100%;
     border-radius: 5px;
     background-color: $negro;
     color: $blanco;
-    font-family: 'Rubik', sans-serif;
+    font-family: Readex Pro,Medium 500;
 }
 .inicio{
     @include medidas (auto, $ancho);
     display: grid;
     margin-bottom: 30px;
-    font-family: ExtraLight 200;
+    font-family: Readex Pro;
+    font-weight: 500;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr, 1fr, 1fr, 1fr;
     grid-template-areas: 
@@ -196,8 +198,7 @@ $mapa: (
     }
 footer{
     @include medidas (auto, $ancho);
-    font-family:'Poppins', sans-serif;
-    font-weight: 900;
+    font-family: Readex Pro;
     margin-top: 30px;
     background-color: $negro;
     display: grid;
@@ -208,13 +209,16 @@ footer{
     "tarjetas instagram email  "
     ". . . "
     ". derechos  .";
+
+    footer p{
+        font-size: 3px;
+    }
 }
 .pagos{
     grid-area: pagos;
     text-align: center;
     padding-top: 20px;
     color: $blanco;
-    font-size: 20px;
 }
 .tarjetas{
     grid-area: tarjetas;
@@ -227,7 +231,6 @@ footer{
     text-align: center;
     padding-top: 20px;
     color:$blanco;
-    font-size: 20px;
 }
 .fa-instagram:hover{
     transform: scale(1.1);
@@ -253,13 +256,11 @@ footer i{
     text-align: center;
     padding-top: 20px;
     color: $blanco;
-    font-size: 20px;
 }
 .email{
     grid-area: email;
     text-align: center;
     color:$blanco;
-    font-size: 15px;
 }
 .derechos{
     grid-area: derechos;
@@ -318,8 +319,8 @@ footer i{
 }
 .productos{
     @include medidas (auto, $ancho);
-    font-family:'Poppins', sans-serif;
-    font-weight: 900;
+    font-family: Readex Pro;
+    font-weight: 500;
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr, 1fr;
@@ -393,13 +394,14 @@ footer i{
     color: $negro;
 }
 .numero{
+    font-family: Readex Pro;
     text-align: center;
     height: 20px;
     background-color: $negro;
     color: $blanco;
 }
 .sillones1{
-    font-family: 'Rubik', Light , sans-serif;
+    font-family: Readex Pro;
     display: flex;
     flex-direction: row;
     grid-gap: 3px;
@@ -409,10 +411,10 @@ footer i{
 .inicio1:hover{
     transform: scale(1.1);
     transition: all 0.3s;
+    color: burlywood;
 }    
 .productos1:hover{
-    transform: scale(1.1);
-    transition: all 0.3s;
+    @extend .inicio1:hover
 }    
 .sillones1 a{
     text-decoration: none;
@@ -425,8 +427,8 @@ footer i{
 }
 .sillones2{
     @include medidas (auto, $ancho);
-    font-family:'Poppins', sans-serif;
-    font-weight: 900;
+    font-family: Readex Pro;
+    font-weight: 500;
     font-size: 13px;
     display: flex;
     flex-direction: column;
