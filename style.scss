@@ -26,7 +26,10 @@ $ancho: 100%;
 
 
 
-
+nav{
+    position: sticky;
+    top: 0px;
+}
 .fondo-nav{
     background-color: $negro;
     font-family: Readex Pro;
