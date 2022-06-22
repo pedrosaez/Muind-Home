@@ -408,7 +408,9 @@ footer i{
     color: burlywood;
 }    
 .productos1:hover{
-    @extend .inicio1:hover
+    transform: scale(1.1);
+    transition: all 0.3s;
+    color: burlywood;
 }    
 .sillones1 a{
     text-decoration: none;
@@ -421,55 +423,67 @@ footer i{
 }
 .sillones2{
     @include medidas (auto, $ancho);
+    display: grid;
+    margin-bottom: 30px;
     font-family: Readex Pro;
     font-weight: 500;
-    font-size: 13px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: 
+    "productoSillon1 productoSillon2" 
+    "sillon1Precio sillon2Precio"
+    "productoSillon3 productoSillon4" 
+    "sillon3Precio sillon4Precio";
 }
 .productoSillon1{
-    @include medidas (300px, 85%);
+    grid-area: productoSillon1;
+    height: 300px;
+    margin: 15px; 
     background-image: url(./pages/img/sillon3.jpg);
-    background-position: center; 
     background-size: cover;
+    background-position: center;
 }
 .sillon1Precio{
-    @include medidas (40px, 120px);
-    margin-top: 10px;
+    grid-area: sillon1Precio;
     text-align: center;
-    border: $negro solid 1px;
 }
-.productosillon2{
-    @include medidas (300px, 85%);
-    margin-top: 15px;
+.productoSillon2{
+    grid-area: productoSillon2;
+    height: 300px;
+    margin: 15px;
     background-image: url(./pages/img/sillon2.jpg);
     background-position: center;
     background-size: cover;
 }
 .sillon2Precio{
-    @extend .sillon1Precio;
+    grid-area: sillon2Precio;
+    text-align: center;
 }
-.productosillon3{
-    @include medidas (300px, 85%);
-    margin-top: 15px;
+.productoSillon3{
+    grid-area: productoSillon3;
+    height: 300px;
+    margin: 15px;
     background-image: url(./pages/img/sillon7.jpg);
     background-position: center;
     background-size: cover;
 }
 .sillon3Precio{
-    @extend .sillon1Precio;
-}
-.productosillon4{
-    @include medidas (300px, 85%);
+    grid-area: sillon3Precio;
     margin-top: 15px;
+    text-align: center;
+}
+.productoSillon4{
+    grid-area: productoSillon4;
+    height: 300px;
+    margin: 15px;
     background-image: url(./pages/img/sillon6.jpg);
     background-position: center;
     background-size: cover;
 }
 .sillon4Precio{
-    @extend .sillon1Precio
+    grid-area: sillon4Precio;
+    margin-top: 15px;
+    text-align: center;
 }
 
 @media only screen and (max-width:480px){
@@ -489,20 +503,16 @@ footer i{
         display: flex;
         flex-direction: column;
     }
-    .sillon{
-        height: 200px;
-        margin:10px
-    }
-    .mesa{
-        height: 200px;
-        margin:10px
-    }
-    .perchero{
-        height: 200px;
-        margin:10px
+    .productos{
+        display: flex;
+        flex-direction: column;
     }
     .deco1{
         list-style: none;
+    }
+    .sillones2{
+        display: flex;
+        flex-direction: column;
     }
     footer{
         display: flex;
