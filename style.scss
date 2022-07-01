@@ -38,12 +38,15 @@ $ancho: 100%;
     @include medidas (35px, $ancho);
     grid-area: divisor1;
     text-align: center;
-    padding-top: 7px;
     margin-top: 10px;
     border-radius: 5px;
     background-color: $negro;
     color: $blanco;
     font-family: Readex Pro,Medium 500;
+    font-size: 20px;
+    .divisor1 p{
+        padding-bottom: 4px;
+    }
 }
 .inicio{
     @include medidas (auto, $ancho);
@@ -60,7 +63,7 @@ $ancho: 100%;
     "item6 item8";
 }
 .item:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 0.3s;
     text-decoration: none;
     color: burlywood;
@@ -145,7 +148,6 @@ $ancho: 100%;
         color: $blanco;
     }
 }
-
 .slider{
     margin-top: 30px;
     display: grid; 
@@ -190,6 +192,7 @@ $mapa: (
             text-align: center;
             font-size: $medida;
             color: $color;
+            padding-top: 15px;
         }
     }
 footer{
@@ -305,13 +308,15 @@ footer i{
     cursor: pointer;
 }
 .nosotros2{
-    padding: 10px;
+    padding: 15px;
 }
 .nosotros3{
-    font-family:'Poppins', sans-serif;
-    font-weight: 900;
-    padding: 40px;
+    font-family: Readex Pro;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 35px;
     color:$negro;
+    align-items: center;
 }
 .productos{
     @include medidas (auto, $ancho);
@@ -327,7 +332,7 @@ footer i{
     "tituloPerchero tituloDeco";
 }
 .producto:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 0.3s;
     text-decoration: none;
     color: burlywood;
@@ -488,7 +493,9 @@ footer i{
     text-align: center;
 }
 
-@media only screen and (max-width:480px){
+
+
+@media only screen and (max-width:780px){
     header{
         display: flex;
         flex-direction: column;
@@ -522,5 +529,43 @@ footer i{
     }
     .formulario{
         margin-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width:480px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        height: 120px;
+        padding-left: 0%
+    }
+    .inicio{
+        display: flex;
+        flex-direction: column;
+    }
+    .nosotros1{
+        display: flex;
+        flex-direction: column;
+    }
+    .productos{
+        display: flex;
+        flex-direction: column;
+    }
+    .deco1{
+        list-style: none;
+    }
+    .sillones2{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario{
+        margin: 0px;
     }
 }
