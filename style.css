@@ -336,7 +336,7 @@ footer i {
   font-family: Readex Pro;
   font-size: 20px;
   font-weight: 500;
-  padding: 35px;
+  margin: 15px;
   color: rgba(0, 0, 0, 0.8078431373);
   align-items: center;
 }
