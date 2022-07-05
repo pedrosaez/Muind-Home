@@ -268,9 +268,10 @@ footer i{
     color:$blanco;
 }
 .formulario{
+    width: 100%;
+    align-items: center;
     background-color: $blanco;
     top: 50%;
-    margin-left: 35%;
     box-shadow: 7px 13px 37px #0008;
     border-radius: 5px;
     font-weight: 700;
@@ -527,10 +528,6 @@ footer i{
         display: flex;
         flex-direction: column;
     }
-    .formulario{
-        margin-left: 0px;
-    }
-
 }
 
 @media only screen and (max-width:480px){
@@ -565,7 +562,10 @@ footer i{
         display: flex;
         flex-direction: column;
     }
+    .nosotros3{
+        font-size: 15px;
+    }
     .formulario{
-        margin: 0px;
+        margin: 10px;
     }
 }
