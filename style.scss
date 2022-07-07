@@ -310,14 +310,18 @@ footer i{
     border-radius: 5px;
     cursor: pointer;
 }
+.nosotros1{
+    display: flex;
+    align-items: center;
+}
 .nosotros2{
-    padding: 15px;
+    justify-content: center;
 }
 .nosotros3{
     font-family: Readex Pro;
     font-size: 20px;
     font-weight: 500;
-    margin: 20px;
+    padding: 10px;
     color:$negro;
     align-items: center;
 }
