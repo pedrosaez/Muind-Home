@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Encode+Sans+Semi+Condensed:wght@100&family=Open+Sans:wght@300;800&family=Poppins:wght@100&family=Readex+Pro:wght@200&family=Rubik:wght@300;500&family=Satisfy&family=Tajawal:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,800&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -29,7 +30,7 @@
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.8078431373);
   color: #fff;
-  font-family: Readex Pro, Medium 500;
+  font-family: Montserrat SemiBold;
   font-size: 20px;
 }
 .divisor1 .divisor1 p {
@@ -145,6 +146,16 @@
   color: #fff;
 }
 
+.trabajos {
+  height: 50px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #888;
+  font-family: Montserrat, semibold;
+  font-size: 35px;
+}
+
 .slider {
   margin-top: 30px;
   display: grid;
@@ -179,6 +190,7 @@
 .tu-beige {
   height: 100px;
   background-color: rgba(0, 0, 0, 0.8078431373);
+  font-family: montserrat, semibold;
   text-align: center;
   font-size: 30px;
   color: beige;
@@ -188,8 +200,9 @@
 .tu-pink {
   height: 100px;
   background-color: rgba(0, 0, 0, 0.8078431373);
+  font-family: montserrat, semibold;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   color: pink;
   padding-top: 15px;
 }
@@ -197,8 +210,9 @@
 .tu-black {
   height: 100px;
   background-color: rgba(0, 0, 0, 0.8078431373);
+  font-family: montserrat, semibold;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color: black;
   padding-top: 15px;
 }
@@ -548,41 +562,33 @@ footer i {
     display: flex;
     flex-direction: column;
   }
-
   .logo {
     height: 120px;
     padding-left: 0%;
   }
-
   .inicio {
     display: flex;
     flex-direction: column;
   }
-
   .nosotros1 {
     display: flex;
     flex-direction: column;
   }
-
   .productos {
     display: flex;
     flex-direction: column;
   }
-
   .deco1 {
     list-style: none;
   }
-
   .sillones2 {
     display: flex;
     flex-direction: column;
   }
-
   footer {
     display: flex;
     flex-direction: column;
   }
-
   .formu {
     margin-left: 60px;
     margin-right: 60px;
@@ -593,50 +599,43 @@ footer i {
     display: flex;
     flex-direction: column;
   }
-
   .logo {
     height: 120px;
     padding-left: 0%;
   }
-
   .inicio {
     display: flex;
     flex-direction: column;
   }
-
   .nosotros1 {
     display: flex;
     flex-direction: column;
   }
-
   .productos {
     display: flex;
     flex-direction: column;
   }
-
   .deco1 {
     list-style: none;
   }
-
   .sillones2 {
     display: flex;
     flex-direction: column;
   }
-
   footer {
     display: flex;
     flex-direction: column;
   }
-
   .nosotros3 {
     font-size: 15px;
   }
-
   .formu {
     margin: 15px;
   }
-
   .derechos {
     font-size: 15px;
+  }
+  .trabajos p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

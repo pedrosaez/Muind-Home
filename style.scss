@@ -5,6 +5,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Encode+Sans+Semi+Condensed:wght@100&family=Open+Sans:wght@300;800&family=Poppins:wght@100&family=Readex+Pro:wght@200&family=Rubik:wght@300;500&family=Satisfy&family=Tajawal:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,800&display=swap');
 
 // variables //
 
@@ -24,7 +25,8 @@ $ancho: 100%;
 .fondo-nav{
     background-color: $negro;
     font-family: Readex Pro;
-}
+} 
+
 .jumbotron{
     height: 450px;
     margin-bottom: 0px;
@@ -34,6 +36,7 @@ $ancho: 100%;
     color: $blanco;
     border-radius: 0%; 
 }
+
 .divisor1{
     @include medidas (35px, $ancho);
     grid-area: divisor1;
@@ -42,12 +45,13 @@ $ancho: 100%;
     border-radius: 5px;
     background-color: $negro;
     color: $blanco;
-    font-family: Readex Pro,Medium 500;
+    font-family: Montserrat SemiBold ;
     font-size: 20px;
     .divisor1 p{
         padding-bottom: 4px;
     }
 }
+
 .inicio{
     @include medidas (auto, $ancho);
     display: grid;
@@ -62,6 +66,7 @@ $ancho: 100%;
     "item5 item7" 
     "item6 item8";
 }
+
 .item:hover{
     transform: scale(1.03);
     transition: all 0.3s;
@@ -69,6 +74,7 @@ $ancho: 100%;
     color: burlywood;
     border-radius: 10px;
 }
+
 .item1{
     grid-area: item1;
     height: 300px;
@@ -77,12 +83,14 @@ $ancho: 100%;
     background-size: cover;
     background-position: center;
 }
+
 .item2{
     grid-area: item2;
     text-align: center;
     text-decoration: none;
     color: $negro;
 }
+
 .item3{
     grid-area: item3;
     height: 300px;
@@ -91,12 +99,14 @@ $ancho: 100%;
     background-size: cover;
     background-position: center;
 }
+
 .item4{
     grid-area: item4;
     text-align: center;
     text-decoration: none;
     color: $negro;
 }
+
 .item5{
     grid-area: item5;
     height: 300px;
@@ -105,12 +115,14 @@ $ancho: 100%;
     background-size: cover;
     background-position: top; 
 }
+
 .item6{
     grid-area: item6;
     text-decoration: none;
     text-align: center;
     color: $negro;
 }
+
 .item7{
     grid-area: item7;
     height: 300px;
@@ -118,18 +130,21 @@ $ancho: 100%;
     background-image: url(./pages/img/silla1.jpg);
     background-size: cover;
     background-position: center;
-}    
+} 
+
 .item8{
     grid-area: item8;
     text-decoration: none;
     text-align: center;
     color: $negro;
 }
+
 .wsp2:hover{
     transform: scale(1.1);
     transition: all 0.3s;
     color: $blanco;
 }
+
 .whatsapp{
     height: 60px;
     width: 60px;
@@ -148,6 +163,17 @@ $ancho: 100%;
         color: $blanco;
     }
 }
+
+.trabajos{
+    height: 50px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #888;
+    font-family: Montserrat, semibold;
+    font-size: 35px;
+}
+
 .slider{
     margin-top: 30px;
     display: grid; 
@@ -158,17 +184,21 @@ $ancho: 100%;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
 }
+
 .slider1{
     margin-left: 10px;
 }
+
 .silder > img{
     scroll-snap-align: start;
 }
+
 .slider img{
     border-radius: 10px;
     height: 300px;
     object-fit: contain;
 }
+
 .slider::-webkit-scrollbar{
     display: none;
 }
@@ -179,8 +209,8 @@ $ancho: 100%;
 
 $mapa: (
     30px: beige,
-    40px: pink,
-    50px: black   
+    35px: pink,
+    40px: black   
 
     );
 
@@ -189,12 +219,14 @@ $mapa: (
         .tu-#{$color} {
             height: 100px;
             background-color: $negro;
+            font-family: montserrat, semibold;
             text-align: center;
             font-size: $medida;
             color: $color;
             padding-top: 15px; 
         }
     }
+
 footer{
     @include medidas (auto, $ancho);
     font-family: Readex Pro;
@@ -213,63 +245,75 @@ footer{
         font-size: 3px;
     }
 }
+
 .pagos{
     grid-area: pagos;
     text-align: center;
     padding-top: 20px;
     color: $blanco;
 }
+
 .tarjetas{
     grid-area: tarjetas;
     text-align: center;
     font-size: 25px;
     letter-spacing: 15px;
 }
+
 .redes{
     grid-area: redes;
     text-align: center;
     padding-top: 20px;
     color:$blanco;
 }
+
 .fa-instagram:hover{
     transform: scale(1.1);
     transition: all 0.3s;
     color: burlywood;
-}    
+}  
+
 .wsp:hover{
     transform: scale(1.1);
     transition: all 0.3s;
     color: burlywood;
-}    
+} 
+
 .instagram{
     grid-area: instagram;
     text-align: center;
     font-size: 25px;
     letter-spacing: 15px;
 }
+
 footer i{
     color: $blanco;
 }
+
 .contactoFooter{
     grid-area: contacto;
     text-align: center;
     padding-top: 20px;
     color: $blanco;
 }
+
 .email{
     grid-area: email;
     text-align: center;
     color:$blanco;
 }
+
 .derechos{
     grid-area: derechos;
     text-align: center;
     padding-top: 20px;
     color:$blanco;
 }
+
 .formu{
     justify-content: center;
 }
+
 .formulario{
     width: 100%;
     background-color: $blanco;
@@ -279,6 +323,7 @@ footer i{
     font-weight: 700;
     font-family:'Poppins', sans-serif;
 }
+
 .contacto{
     width: 100%;
     color:$negro;
@@ -287,11 +332,13 @@ footer i{
     .nombre{
         padding-top: 30px;
     }
-}    
+}
+
 .contacto label, .contacto input, .contacto textarea {
     width: 100%;
     margin-bottom: 8px;
 }
+
 .contacto input:not([type=submit]), .contacto textarea {
     border: none;
     border-bottom: 1px solid $negro;
@@ -299,10 +346,12 @@ footer i{
     font-size: 20px;
     outline: none;
 }
+
 .enviar:hover{
     transform: scale(1.1);
     transition: all 0.3s;
-}    
+}
+
 .enviar{
     background-color: $negro;
     color: $blanco;
@@ -310,13 +359,16 @@ footer i{
     border-radius: 5px;
     cursor: pointer;
 }
+
 .nosotros1{
     display: flex;
     align-items: center;
 }
+
 .nosotros2{
     justify-content: center;
 }
+
 .nosotros3{
     font-family: Readex Pro;
     font-size: 20px;
@@ -325,6 +377,7 @@ footer i{
     color:$negro;
     align-items: center;
 }
+
 .productos{
     @include medidas (auto, $ancho);
     font-family: Readex Pro;
@@ -338,13 +391,15 @@ footer i{
     "perchero deco1" 
     "tituloPerchero tituloDeco";
 }
+
 .producto:hover{
     transform: scale(1.03);
     transition: all 0.3s;
     text-decoration: none;
     color: burlywood;
     border-radius: 10px;
-}    
+}
+
 .sillon{
     grid-area: sillon;
     height: 300px;
@@ -353,6 +408,7 @@ footer i{
     background-size: cover;
     background-position: center;
 }
+
 .mesa{
     grid-area: mesa;
     height: 300px;
@@ -361,18 +417,21 @@ footer i{
     background-size: cover;
     background-position: top;
 }
+
 .tituloSillon{
     grid-area: tituloSillon;
     text-decoration: none;
     text-align: center;
     color: $negro;
 }
+
 .tituloMesa{
     grid-area: tituloMesa;
     text-decoration: none;
     text-align: center;
     color: $negro;
 }
+
 .perchero{
     grid-area: perchero;
     height: 300px;
@@ -381,6 +440,7 @@ footer i{
     background-size: cover;
     background-position: center;
 }
+
 .deco1{
     grid-area: deco1;
     height: 300px;
@@ -389,18 +449,21 @@ footer i{
     background-size: cover;
     background-position: center;
 }
+
 .tituloPerchero{
     grid-area: tituloPerchero;
     text-decoration: none;
     text-align: center;
     color: $negro;
 }
+
 .tituloDeco{
     grid-area: tituloDeco;
     text-decoration: none;
     text-align: center;
     color: $negro;
 }
+
 .numero{
     font-family: Readex Pro;
     text-align: center;
@@ -408,6 +471,7 @@ footer i{
     background-color: $negro;
     color: $blanco;
 }
+
 .sillones1{
     font-family: Readex Pro;
     display: flex;
@@ -416,25 +480,30 @@ footer i{
     padding-top: 5px;
     position: relative;
 }
+
 .inicio1:hover{
     transform: scale(1.1);
     transition: all 0.3s;
     color: burlywood;
-}    
+} 
+
 .productos1:hover{
     transform: scale(1.1);
     transition: all 0.3s;
     color: burlywood;
-}    
+}
+
 .sillones1 a{
     text-decoration: none;
     padding-left: 5px;
     color: $negro;
 }
+
 .sillones1 p{
     padding-left: 8px;
     color: $negro;
 }
+
 .sillones2{
     @include medidas (auto, $ancho);
     display: grid;
@@ -449,6 +518,7 @@ footer i{
     "productoSillon3 productoSillon4" 
     "sillon3Precio sillon4Precio";
 }
+
 .productoSillon1{
     grid-area: productoSillon1;
     height: 300px;
@@ -457,10 +527,12 @@ footer i{
     background-size: cover;
     background-position: center;
 }
+
 .sillon1Precio{
     grid-area: sillon1Precio;
     text-align: center;
 }
+
 .productoSillon2{
     grid-area: productoSillon2;
     height: 300px;
@@ -469,10 +541,12 @@ footer i{
     background-position: center;
     background-size: cover;
 }
+
 .sillon2Precio{
     grid-area: sillon2Precio;
     text-align: center;
 }
+
 .productoSillon3{
     grid-area: productoSillon3;
     height: 300px;
@@ -481,11 +555,13 @@ footer i{
     background-position: center;
     background-size: cover;
 }
+
 .sillon3Precio{
     grid-area: sillon3Precio;
     margin-top: 15px;
     text-align: center;
 }
+
 .productoSillon4{
     grid-area: productoSillon4;
     height: 300px;
@@ -494,6 +570,7 @@ footer i{
     background-position: center;
     background-size: cover;
 }
+
 .sillon4Precio{
     grid-area: sillon4Precio;
     margin-top: 15px;
@@ -507,33 +584,41 @@ footer i{
         display: flex;
         flex-direction: column;
     }
+
     .logo{
         height: 120px;
         padding-left: 0%
     }
+
     .inicio{
         display: flex;
         flex-direction: column;
     }
+
     .nosotros1{
         display: flex;
         flex-direction: column;
     }
+
     .productos{
         display: flex;
         flex-direction: column;
     }
+
     .deco1{
         list-style: none;
     }
+
     .sillones2{
         display: flex;
         flex-direction: column;
     }
+
     footer{
         display: flex;
         flex-direction: column;
     }
+
     .formu{
         margin-left: 60px;
         margin-right: 60px;
@@ -545,40 +630,54 @@ footer i{
         display: flex;
         flex-direction: column;
     }
+
     .logo{
         height: 120px;
         padding-left: 0%
     }
+
     .inicio{
         display: flex;
         flex-direction: column;
     }
+
     .nosotros1{
         display: flex;
         flex-direction: column;
     }
+
     .productos{
         display: flex;
         flex-direction: column;
     }
+
     .deco1{
         list-style: none;
     }
+
     .sillones2{
         display: flex;
         flex-direction: column;
     }
+
     footer{
         display: flex;
         flex-direction: column;
     }
+
     .nosotros3{
         font-size: 15px;
     }
+
     .formu{
         margin: 15px;
     }
+
     .derechos{
         font-size: 15px;
+    }
+
+    .trabajos p{
+        font-size: 20px;
     }
 }
